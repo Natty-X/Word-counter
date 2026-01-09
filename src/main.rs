@@ -33,19 +33,21 @@ impl<'a> PromptLength<'a> {
 
 
 fn main() {
-    let input = PromptLength::read_input();
+        let input = PromptLength::read_input();
     
-    let prompt = PromptLength {
-        word_count: &input,
-        lines_count: &input,
-        character_count: &input,
-    };
+//    loop {
+        let prompt = PromptLength {
+            word_count: &input,
+            lines_count: &input,
+            character_count: &input,
+        };
 
-    let word_count = prompt.word_count();
+        let word_count = prompt.word_count();
     
-    let lines_count = prompt.lines_count();
+        let lines_count = prompt.lines_count();
 
-    let character_count = prompt.character_count();
+        let character_count = prompt.character_count();
 
-    println!("\n\n\nWord count>> {:?},\n\nlines count>> {:?},\n\ncharacters count>> {:?}", word_count, lines_count, character_count);
+        println!("\n\n\nWord count>> {:?},\n\nlines count>> {:?},\n\ncharacters count>> {:?}", word_count, lines_count, character_count);
+  //  }
 }
